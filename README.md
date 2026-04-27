@@ -71,19 +71,7 @@ int main(){
     return 0;
 }
 
-    fgets(taskName, sizeof(taskName), stdin);
-        taskName[strcspn(taskName, "\n")] = 0; // remove newline
-        addTask(&taskList, taskName);
-    }
 
-    printf("\nOriginal Task List:\n");
-    displayTasks(taskList);
 
-    taskList = reverseList(taskList);
 
-    printf("\nReversed Task List:\n");
-    displayTasks(taskList);
-
-    return 0;
-}
 ṇ
